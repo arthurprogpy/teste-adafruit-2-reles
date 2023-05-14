@@ -5,14 +5,14 @@
 #define LED1 D1
 #define LED2 D0
 
-char ssid[] = "brisa-2704049";
-char pass[] = "cvetbicz";
+char ssid[] = "-";
+char pass[] = "-";
 
 // Crie uma instância da biblioteca WiFiClient para se comunicar com o Adafruit IO.
 WiFiClient client;
 
 // Substitua com suas informações de autenticação do Adafruit IO.
-AdafruitIO_WiFi io("arthurprogpy", "aio_RFUe722UIQ051j0GPaauurnCzdBg", ssid, pass);
+AdafruitIO_WiFi io("-", "-", ssid, pass);
 
 // Crie uma instância dos feeds do Adafruit IO para os LEDs.
 AdafruitIO_Feed *led1 = io.feed("relay2");
